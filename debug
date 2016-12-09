@@ -1,0 +1,18 @@
+define multiproc
+set detach-on-fork off
+end
+
+define singleproc
+set detach-on-fork on
+end
+
+define parent
+set follow-fork-mode parent
+end
+
+define child
+set follow-fork-mode child
+end
+
+source aa
+start
